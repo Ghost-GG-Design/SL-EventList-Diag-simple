@@ -10,9 +10,6 @@ document.addEventListener('onLoad', function(obj) {
 document.addEventListener('onEventReceived', function(obj) {
   	// obj will contain information about the event
   console.log("onEventReceived", obj);
-  $("li").first().addClass("newest");
-  $("li").first().removeClass("newest");
- 
   var bits = obj.detail.tag.split(" ")[0];
   console.log(bits);
   if(bits < 100){
